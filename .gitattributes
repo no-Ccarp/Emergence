@@ -1,0 +1,38 @@
+# Unity 资产：禁止行尾转换，避免二进制资源被 Git 改写损坏
+* text=auto
+
+# 脚本用 LF，方便 diff
+*.cs      text eol=lf diff=csharp
+*.shader  text eol=lf
+*.hlsl    text eol=lf
+*.compute text eol=lf
+*.asmdef  text eol=lf
+*.json    text eol=lf
+*.md      text eol=lf
+
+# 明确标记为二进制
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.tga     binary
+*.psd     binary
+*.fbx     binary
+*.obj     binary
+*.blend   binary
+*.wav     binary
+*.mp3     binary
+*.ogg     binary
+*.aiff    binary
+*.ttf     binary
+*.otf     binary
+*.dll     binary
+*.so      binary
+*.bundle  binary
+*.unitypackage binary
+
+# Unity YAML：用 Unity 自带的合并工具，失败则退回行合并
+*.unity   merge=unityyamlmerge eol=lf
+*.prefab  merge=unityyamlmerge eol=lf
+*.asset   merge=unityyamlmerge eol=lf
+*.meta    merge=unityyamlmerge eol=lf
+*.controller merge=unityyamlmerge eol=lf

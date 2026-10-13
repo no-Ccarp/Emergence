@@ -1,0 +1,70 @@
+# ---------------------------------------------------------------
+# Unity 6 (6000.x) + URP  —  GameJam .gitignore
+# ---------------------------------------------------------------
+
+# Unity 生成的中间目录（永远不要提交）
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Asset Store 下载缓存
+/[Aa]ssets/AssetStoreTools*
+
+# 自动生成的工程文件
+.vs/
+.vscode/
+.idea/
+.gradle/
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Unity 崩溃报告
+sysinfo.txt
+crashlytics-build.properties
+
+# 构建产物
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# 操作系统垃圾
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Rider
+.idea/
+
+# 本地参考资源（大体积美术/音频草稿，按需自行调整）
+/[Aa]ssets/_LocalRefs/
+
+# ---------------------------------------------------------------
+# Git LFS 提示：Jam 后期如果美术资源变大，再执行
+#   git lfs track "*.psd" "*.fbx" "*.wav" "*.png"
+# 目前不启用，避免给仓促的赛程增加复杂度。
+# ---------------------------------------------------------------
